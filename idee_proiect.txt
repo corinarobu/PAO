@@ -1,0 +1,33 @@
+PROIECT PAO
+---  FOOD DELIVERY ---
+
+utilizator(nume, prenume, varsta, gen, nr_telefon, email) 
+      -- client (utilizator+ adresa,
+                   lista de alimente alergice -- sa primeasca avertizare 
+                   daca introduce in comanda ceva nepotrivit)
+      --angajat (utilizator + post de lucru, data
+                      angajarii, salariu, nr ore zilinic)
+
+restaurante(nume, adresa,  an infintare, specific, ore functionare)
+comanda(lista mancare, lista bauturi, tip plata, ora_sosire_dorita)
+mancare( nume, pret, lista alergeni, bool vegetariant, calorii)
+bauturi( nume, pret, bool alcool, calorii)
+recenzii( nota, comentariu, varsta_utilizator)
+
+
+-- plasare comanda
+-- actualizare profil
+-- adauga recenzie
+-- adaugare produse in meniu
+-- procesare comanda
+-- cautare restaurante si produse
+-- generare raport de vanzari ( se ia evidenta celor mai cumparate
+                    produse si li se atribuie o reducere pe saptamana viitoare)
+-- stergere client ( ca angajat poti sa elimini clientii ce nu isi ridica comenzile)
+-- preluare comanda ( angajatu ia prima comanda din coada 
+                               si o trimite actualizandu-i statusul si costul)
+-- sugestie meniu( cand nu stii ce sa comanzi, pui pret maxim
+                si se da o optiune de mancare+bautura in pretul dat)
+
+folosire structuri: liste pentru a mentine diverse atribute din comenzi
+                         queue - comenzile vor intra intr-o lista de asteptare
